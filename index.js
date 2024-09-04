@@ -1,3 +1,4 @@
+// api/index.js
 const express = require('express');
 const axios = require('axios');
 const XLSX = require('xlsx');
@@ -76,6 +77,6 @@ app.get('/:category', async (req, res) => {
 app.get('/', async (req, res) => {
     res.json({ "Hello": "Internhub" });
 });
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
+
+// Export the Express app to handle requests
+module.exports = app;
