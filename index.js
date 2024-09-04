@@ -3,7 +3,7 @@ const axios = require('axios');
 const XLSX = require('xlsx');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Replace with your actual Google Places API key
 const API_KEY = 'AIzaSyCNYYSU9kTgJFFLXgV27YU1lWsp1mrpsZA';
