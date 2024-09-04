@@ -73,6 +73,9 @@ app.get('/:category', async (req, res) => {
     }
 });
 
+app.get('/', async (req, res) => {
+    res.json({ "Hello": "Internhub" });
+});
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
